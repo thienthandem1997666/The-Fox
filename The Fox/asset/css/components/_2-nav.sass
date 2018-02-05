@@ -1,0 +1,50 @@
+.navbar
+	display: block
+	height: 70px
+	width: 100%
+	padding: 0px
+	&.navbar-light.bg-light
+		background: white
+	.container
+		height: 100%
+		padding: 20px
+		position: relative
+.navbar__brand
+	img
+		height: 50px
+		width: auto
+.navbar__collapse
+	width: 100%
+	padding: 20px
+	&.collapse
+		display: none
+	&.show,&.collapsing
+		display: block
+		position: absolute
+		top: 100%
+		left: 0px
+		z-index: 9999
+		background: $pastel
+		.navbar-list__item
+			display: block
+			width: 100%
+			transition: 0.2s
+			.nav-link
+				display: block
+				width: 100%
+				+menu
+				padding-left: 10px
+				color: white
+			&:hover
+				background-color: white
+				.nav-link
+					color: $pastel
+.navbar-light 
+	.navbar-toggler
+		border: none
+		.navbar-toggler-icon
+			background: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(255, 209, 195, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>")
+		&:focus
+			background-color: $pastel
+			.navbar-toggler-icon
+				background: url("data:image/svg+xml;charset=utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>")

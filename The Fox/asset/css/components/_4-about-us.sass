@@ -1,0 +1,65 @@
+.about-us--heading
+	+heading
+	margin-top: 90px
+	margin-bottom: 15px
+.about-us--small
+	+para
+	margin-bottom: 20px
+	&:nth-child(4)
+		margin-bottom: 15px
+.about-us--heading-s
+	+para-bold
+	margin-bottom: 15px
+.view-details-btn
+	+button
+	margin-bottom: 15px
+.about-us--big
+	+para-bold
+	display: inline-block
+.slider__header
+	border: 1px solid #a1b1bc
+	border-radius: 2px
+	padding: 15px 0px 15px 20px
+	cursor: pointer
+	margin-top: 5px
+	i
+		float: right
+		color: #a1b1bc
+		display: block
+		margin-top: -15px
+		width: 45px
+		height: 46px
+		border-left: 1px solid #a1b1bc
+		border-radius: 2px
+		&:before
+			display: block
+			margin-top: 15px
+			margin-left: 15px
+.slider__details
+	border: 1px solid #a1b1bc
+	margin-top: 5px
+	border-radius: 2px
+	padding: 20px
+	position: relative
+	display: none
+	min-height: 140px
+	img
+		position: absolute
+		top: 20px
+		left: 20px
+		width: 100px
+		height: 100px
+	p
+		margin-left: 115px
+		+para
+.list__item
+	&:first-child
+		.slider
+			.slider__header
+				margin-top: 0px
+	&:nth-child(1)
+		.slider__details
+			display: block
+.about-us
+	margin-bottom: 100px
+		

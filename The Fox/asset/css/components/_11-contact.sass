@@ -1,0 +1,35 @@
+.contact__left
+	h1
+		+heading
+		margin-bottom: 40px
+	.icon
+		+para-bold
+		margin-bottom: 25px
+		i
+			padding: 5px
+			transition: 0.2s
+			&:hover
+				color: $pastel
+	p,li
+		+para
+.contact
+	padding: 100px 0px
+.contact__info
+	margin-top: 30px
+	margin-bottom: 30px
+.contact__right
+	form
+		.form-group
+			margin-bottom: 20px
+			input
+				+para
+				border: 1px solid #dee6e6
+				box-shadow: inset 0px 2px 2px #dee6e6
+				height: 50px
+			&:nth-child(4)
+				input
+					height: 100px
+		a
+			+button
+			display: block
+

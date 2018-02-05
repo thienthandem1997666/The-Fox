@@ -1,0 +1,46 @@
+$pastel: #FFD1C3
+// mixin
+=menu()
+	font-family: 'lato', sans-serif
+	line-height: 1
+	font-size: 14px
+	color: #2c3e50
+	font-weight: 700
+	transition: 0.2s
+	&:hover
+		color: white
+=para-bold()
+	font-family: 'lato', sans-serif
+	font-size: 15px
+	font-weight: 700
+	line-height: 1
+	color: #2c3e50
+=heading()
+	font-family: 'lato', sans-serif
+	font-size: 36px
+	font-weight: 300
+	line-height: 1
+	color: #2c3e50
+=para()
+	font-family: 'lato', sans-serif
+	font-size: 14px
+	line-height: 24px
+	color: #a1b1bc
+=button()
+	font-family: 'lato', sans-serif
+	font-size: 16px
+	line-height: 1
+	color: white!important
+	font-weight: 900
+	padding: 10px 25px
+	border-radius: 4px
+	box-shadow: 0px 3px 0px #ff9e81
+	background-color: $pastel
+	border-color: $pastel
+	transition: all 0.2s ease-in-out
+	&:hover,&:active
+		color: $pastel!important
+		box-shadow: 0px 0px 0px #ff9e81!important
+		background-color: white!important
+		border: 1px solid $pastel!important
+		transform: translate(0px,3px)!important
